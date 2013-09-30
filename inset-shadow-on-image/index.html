@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<title>Inset Shadow on Image</title>
+
+<style type="text/css">
+	body {
+		background: #EEE;
+		font-family: sans-serif;
+		width: 50%;
+		margin: 5% auto;
+	}	
+
+	.container {
+		position: relative;
+		background: #DDD;
+		width: 325px;
+		margin: 0 5%;
+		box-sizing: border-box;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.inset-shadow-container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-shadow: inset 0 0 20px black;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	h4 {
+		margin: 5% 0 0 0;
+		padding: 0 0 2.5% 5%;
+	}
+
+	h5 {
+		margin: 0 0 5% 0;
+		padding: 0 0 0 5%;
+		font-weight: normal;
+	}
+	.description {
+		padding: 4% 0 5% 5%;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="inset-shadow-container"></div>
+		<img src="https://dl.dropboxusercontent.com/u/2757762/2013-08-14%2017.07.33.jpg">
+		<h4>Container Title</h4>
+		<h5>Container information.</h5>
+	</div>
+
+	 <div class="container">
+      <div class="inset-shadow-container"></div>
+        <img src="https://dl.dropboxusercontent.com/u/2757762/2013-08-14%2017.07.33.jpg">
+      <div class="body">
+        <h4>Title</h4>
+        <h5>Subtitle</h5>
+        <div class="description">
+	        {$content}
+	        {$link}
+	        {$edit}
+	      </div>
+	    </div>
+	  </div>
+
+</body>
+</html>

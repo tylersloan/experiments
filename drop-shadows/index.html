@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title></title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+  
+  body {
+    width: 75%;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: teal;
+  }
+
+  .heatin {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 100px;
+    color: #D11A08;
+    z-index: 3;
+    text-transform: uppercase;
+  }
+  .heatin:after {
+    background: #E4B46C;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "Heatin' Up";
+    position:absolute;
+    margin: -118px 0 0 49px;
+    display: block;
+    z-index: -20;
+    -webkit-transform: rotate(1deg);
+  }
+
+  h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 382px;
+    line-height: 1;
+    letter-spacing: 30px;
+    color: white;
+    /*text-shadow: -4px 4px 0 teal,-11px 10px 0 white;*/
+    -webkit-mask-size: 475px auto;
+    -webkit-mask-image: url(halftone.png);
+    z-index: 1000;
+  }
+
+  h1:after {
+    content: 'TYLER';
+    position:absolute;
+    margin: -268px 0 0px 17px;
+    display: block;
+    background-color: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform:skew(1deg,1deg);
+    z-index: 1;
+  }
+
+  
+  </style>
+
+</head>
+<body>
+
+  <h1>
+    TYLER
+  </h1>
+
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="FitText.js-master/jquery.fittext.js"></script>
+  <script>
+    jQuery("h1").fitText(.27);
+  </script> -->
+
+</body>
+</html>
